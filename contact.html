@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Happy Paws</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="index.html" class="navbar__logo"><i class="fa-solid fa-paw"></i><span>Happy Paws</span></a>
+        <nav class="navbar__navigation" id="navbar__navigation">
+          <ul class="navbar__links">
+            <li><a href="index.html" class="navbar__link">Home</a></li>
+            <li><a href="about.html" class="navbar__link">About Us</a></li>
+            <li><a href="pets.html" class="navbar__link">Available Pets</a></li>
+            <li><a href="adoption.html" class="navbar__link">Adoption Info</a></li>
+            <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
+            <li><a href="contact.html" class="navbar__link active">Contact</a></li>
+            <li><a href="dev.html" class="navbar__link">Compliance</a></li>
+          </ul>
+        </nav>
+        <button class="navbar__sheet-trigger" id="navbar__sheet-trigger" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-label">Contact us</span>
+          <h1>Ask about adoption, fostering, or volunteering</h1>
+          <p>Send a message and we will reply when one of the volunteers gets through the inbox.</p>
+        </div>
+      </section>
+
+      <section class="section-space">
+        <div class="container contact-grid">
+          <div class="contact-details">
+            <h2>Contact details</h2>
+            <div class="contact-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>hello@happypaws.org</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+1 (555) 018-2044</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Location</h3>
+                <p>42 Shelter Lane, Springfield</p>
+              </div>
+            </div>
+            <p class="privacy-note">
+              Privacy notice: your name, email, and comments are collected so
+              Happy Paws can reply to your enquiry. This static demo does not
+              store messages in a database.
+            </p>
+          </div>
+
+          <form class="contact-form" action="thankyou.html" method="get" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit comments</button>
+            <p class="form-feedback" id="form-feedback"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div><a href="index.html" class="footer-logo"><i class="fa-solid fa-paw"></i> Happy Paws</a><p>A small local rescue helping homeless cats and dogs find safer homes.</p></div>
+        <div><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="pets.html">Available Pets</a></li><li><a href="adoption.html">Adoption Information</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="dev.html">Development & Compliance</a></li></ul></div>
+        <div><h5>Contact</h5><p><i class="fa-solid fa-envelope"></i> hello@happypaws.org</p><p><i class="fa-solid fa-phone"></i> +1 (555) 018-2044</p><p><i class="fa-solid fa-location-dot"></i> 42 Shelter Lane, Springfield</p></div>
+      </div>
+      <div class="footer-bottom"><div class="container"><p>© <span class="footer-year"></span> Happy Paws Pet Adoption</p><p>Images from Unsplash, used for educational website practice.</p></div></div>
+    </footer>
+  </body>
+</html>

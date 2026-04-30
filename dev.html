@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development and Compliance | Happy Paws</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="index.html" class="navbar__logo"
+          ><i class="fa-solid fa-paw"></i><span>Happy Paws</span></a
+        >
+        <nav class="navbar__navigation" id="navbar__navigation">
+          <ul class="navbar__links">
+            <li><a href="index.html" class="navbar__link">Home</a></li>
+            <li><a href="about.html" class="navbar__link">About Us</a></li>
+            <li><a href="pets.html" class="navbar__link">Available Pets</a></li>
+            <li>
+              <a href="adoption.html" class="navbar__link">Adoption Info</a>
+            </li>
+            <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+            <li>
+              <a href="dev.html" class="navbar__link active">Compliance</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="navbar__sheet-trigger"
+          id="navbar__sheet-trigger"
+          aria-label="Open navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-label">Development and Compliance</span>
+          <h1>Planning, testing, and website responsibility notes</h1>
+          <p>
+            This page explains how the website was designed, developed, tested,
+            and checked against the assignment issues.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-space">
+        <div class="container dev-grid">
+          <article class="dev-card">
+            <h2>Development process</h2>
+            <p>
+              The website was planned first by listing the required pages: Home,
+              About Us, Available Pets, Adoption Information, Gallery, Contact
+              Us, Thank You, and Development and Compliance. After that, a
+              consistent navigation menu and footer were designed so visitors
+              can move between pages easily.
+            </p>
+            <p>
+              The design uses warm colours, large pet photos, simple card
+              layouts, and readable spacing. The site was developed as static
+              HTML, CSS, and JavaScript. The contact form uses basic browser
+              validation and sends the user to the Thank You page after
+              submission.
+            </p>
+          </article>
+
+          <article class="dev-card">
+            <h2>Simple site map</h2>
+            <div class="site-map">
+              <div>index.html<br /><span>Home</span></div>
+              <i class="fa-solid fa-arrow-down"></i>
+              <div>
+                about.html | pets.html | adoption.html | gallery.html |
+                contact.html
+              </div>
+              <i class="fa-solid fa-arrow-down"></i>
+              <div>thankyou.html<br /><span>After contact form</span></div>
+              <i class="fa-solid fa-arrow-down"></i>
+              <div>
+                dev.html<br /><span>Planning and compliance notes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dev-card dev-card">
+            <h2>Wireframe / planning notes</h2>
+            <div class="wireframe">
+              <div class="wire-row">Header: logo + navigation links</div>
+              <div class="wire-grid">
+                <div>Hero text</div>
+                <div>Hero image</div>
+              </div>
+              <div class="wire-row">
+                Main content sections: cards, text blocks, gallery, or form
+              </div>
+              <div class="wire-row">
+                Footer: page links, contact details, image source note
+              </div>
+            </div>
+          </article>
+
+          <article class="dev-card">
+            <h2>Testing summary</h2>
+            <ul class="plain-list">
+              <li>
+                <strong>Page links:</strong> checked that all navigation and
+                footer links open the correct pages.
+              </li>
+              <li>
+                <strong>Navigation:</strong> checked desktop menu and mobile
+                menu button behaviour.
+              </li>
+              <li>
+                <strong>Images:</strong> checked all pet and gallery images load
+                and include alt text.
+              </li>
+              <li>
+                <strong>Form submission:</strong> checked the Contact Us form
+                requires name, email, and comments, then goes to thankyou.html.
+              </li>
+            </ul>
+          </article>
+
+          <article class="dev-card">
+            <h2>Privacy, security, copyright, and censorship</h2>
+            <p>
+              <strong>Privacy:</strong> The contact page explains why user
+              details are collected. Only name, email, and comments are asked
+              for, so unnecessary personal information is avoided.
+            </p>
+            <p>
+              <strong>Security:</strong> The form uses required fields and email
+              input type. A real website would also need server-side validation,
+              spam protection, and secure storage if messages were saved.
+            </p>
+            <p>
+              <strong>Copyright:</strong> Pet images were downloaded from
+              Unsplash into the local images folder. The HTML includes source
+              comments near the image tags, and the footer acknowledges the
+              source. Images are used for an educational static website.
+            </p>
+            <p>
+              <strong>Content appropriateness:</strong> Animal rescue content
+              can be upsetting if it shows neglect or injury. This site uses
+              positive and safe images suitable for general visitors and younger
+              audiences.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo"
+            ><i class="fa-solid fa-paw"></i> Happy Paws</a
+          >
+          <p>
+            A small local rescue helping homeless cats and dogs find safer
+            homes.
+          </p>
+        </div>
+        <div>
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Information</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="dev.html">Development & Compliance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <p><i class="fa-solid fa-envelope"></i> hello@happypaws.org</p>
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 018-2044</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 42 Shelter Lane,
+            Springfield
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span class="footer-year"></span> Happy Paws Pet Adoption</p>
+          <p>Images from Unsplash, used for educational website practice.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

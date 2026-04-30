@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Paws Pet Adoption</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="index.html" class="navbar__logo">
+          <i class="fa-solid fa-paw"></i>
+          <span>Happy Paws</span>
+        </a>
+
+        <nav class="navbar__navigation" id="navbar__navigation">
+          <ul class="navbar__links">
+            <li><a href="index.html" class="navbar__link active">Home</a></li>
+            <li><a href="about.html" class="navbar__link">About Us</a></li>
+            <li><a href="pets.html" class="navbar__link">Available Pets</a></li>
+            <li><a href="adoption.html" class="navbar__link">Adoption Info</a></li>
+            <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+            <li><a href="dev.html" class="navbar__link">Compliance</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="navbar__sheet-trigger"
+          id="navbar__sheet-trigger"
+          aria-label="Open navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="hero-label">Local rescue, real second chances</span>
+            <h1>Help a cat or dog find their safe place.</h1>
+            <p>
+              Happy Paws Pet Adoption rescues homeless cats and dogs, cares for
+              them in foster homes, and matches them with people who are ready
+              to love them properly.
+            </p>
+            <div class="hero-actions">
+              <a href="pets.html" class="btn btn-primary btn-lg">
+                Meet the pets
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="adoption.html" class="btn btn-outline btn-lg">
+                How adoption works
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <!-- Unsplash source: https://images.unsplash.com/photo-1601758174114-e711c0cbaa69 -->
+            <img
+              src="images/hero-dog.jpg"
+              alt="A rescued dog sitting with a person outdoors"
+            />
+            <div class="hero-note">
+              <strong>340+</strong>
+              <span>animals rehomed since 2018</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-stats">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <h3>12</h3>
+            <p>pets waiting now</p>
+          </div>
+          <div class="stat-card">
+            <h3>50+</h3>
+            <p>foster volunteers</p>
+          </div>
+          <div class="stat-card">
+            <h3>6</h3>
+            <p>years helping animals</p>
+          </div>
+          <div class="stat-card">
+            <h3>1</h3>
+            <p>good home can change everything</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-space">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-label">Waiting for homes</span>
+            <h2>Meet a few of our pets</h2>
+            <p>
+              These animals are ready for a new start. Some are playful, some
+              are shy, and some just want a couch and a person.
+            </p>
+          </header>
+
+          <div class="pets-grid">
+            <article class="pet-card">
+              <div class="pet-image">
+                <!-- Unsplash source: https://images.unsplash.com/photo-1537151625747-768eb6cf92b2 -->
+                <img src="images/bella.jpg" alt="Bella the golden retriever" />
+                <span>Dog</span>
+              </div>
+              <div class="pet-body">
+                <h3>Bella</h3>
+                <p class="pet-meta">Golden Retriever, 2 years, female</p>
+                <p>
+                  Bella is bright, loud when she is excited, and very sweet with
+                  kids. She would suit a family who likes walks and has a bit of
+                  patience for zoomies.
+                </p>
+                <a href="pets.html" class="card-link">Read more</a>
+              </div>
+            </article>
+
+            <article class="pet-card">
+              <div class="pet-image">
+                <!-- Unsplash source: https://images.unsplash.com/photo-1574158622682-e40e69881006 -->
+                <img src="images/oliver.jpg" alt="Oliver the tabby cat" />
+                <span>Cat</span>
+              </div>
+              <div class="pet-body">
+                <h3>Oliver</h3>
+                <p class="pet-meta">Tabby, 4 years, male</p>
+                <p>
+                  Oliver likes windows, soft blankets, and pretending he does
+                  not need attention. He does tho. He is calm with other cats.
+                </p>
+                <a href="pets.html" class="card-link">Read more</a>
+              </div>
+            </article>
+
+            <article class="pet-card">
+              <div class="pet-image">
+                <!-- Unsplash source: https://images.unsplash.com/photo-1587300003388-59208cc962cb -->
+                <img src="images/max.jpg" alt="Max the beagle puppy" />
+                <span>Dog</span>
+              </div>
+              <div class="pet-body">
+                <h3>Max</h3>
+                <p class="pet-meta">Beagle mix, 1 year, male</p>
+                <p>
+                  Max is still learning manners, but he is clever and loves
+                  food puzzles. He needs someone who can help him grow up good.
+                </p>
+                <a href="pets.html" class="card-link">Read more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-process">
+        <div class="container process-grid">
+          <div>
+            <span class="section-label">Simple steps</span>
+            <h2>Adoption should feel careful, not confusing.</h2>
+            <p>
+              We do ask questions, because the match matters. But we keep the
+              process clear so first-time visitors know what is happening next.
+            </p>
+          </div>
+
+          <div class="mini-steps">
+            <div class="mini-step">
+              <span>01</span>
+              <h4>Browse pets</h4>
+              <p>Read each pet profile and think honestly about your home.</p>
+            </div>
+            <div class="mini-step">
+              <span>02</span>
+              <h4>Send an enquiry</h4>
+              <p>Tell us who you are interested in and ask any questions.</p>
+            </div>
+            <div class="mini-step">
+              <span>03</span>
+              <h4>Meet first</h4>
+              <p>We arrange a meet and greet before any final decision.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-content">
+          <h2>Not ready to adopt?</h2>
+          <p>
+            You can still help by fostering, sharing pet profiles, donating
+            supplies, or visiting an adoption day. It all adds up.
+          </p>
+          <a href="contact.html" class="btn btn-light btn-lg">Contact the team</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <i class="fa-solid fa-paw"></i> Happy Paws
+          </a>
+          <p>
+            A small local rescue helping homeless cats and dogs find safer,
+            kinder homes.
+          </p>
+        </div>
+        <div>
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pets.html">Available Pets</a></li>
+            <li><a href="adoption.html">Adoption Information</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="dev.html">Development & Compliance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <p><i class="fa-solid fa-envelope"></i> hello@happypaws.org</p>
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 018-2044</p>
+          <p><i class="fa-solid fa-location-dot"></i> 42 Shelter Lane, Springfield</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© <span class="footer-year"></span> Happy Paws Pet Adoption</p>
+          <p>Images from Unsplash, used for educational website practice.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
