@@ -48,7 +48,8 @@ if (contactForm && feedbackElement) {
 
     if (!name || !email || !comments) {
       event.preventDefault();
-      feedbackElement.textContent = "Please fill in your name, email, and comments.";
+      feedbackElement.textContent =
+        "Please fill in your name, email, and comments.";
       feedbackElement.classList.add("error");
       return;
     }
@@ -63,7 +64,7 @@ if (contactForm && feedbackElement) {
 
 function isValidEmail(email) {
   return /^(?!\.)(?!.*\.\.)([a-z0-9_'+\-.]*)[a-z0-9_'+\-]@([a-z0-9][a-z0-9-]*\.)+[a-z]{2,}$/i.test(
-    email
+    email,
   );
 }
 
